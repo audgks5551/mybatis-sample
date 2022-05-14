@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/demo?&serverTimezone=UTC&autoReconnect=true&allowMultiQueries=true&characterEncoding=UTF-8
+    username: testuser
+    password: 5678
+    mapper-locations: classpath:/mapper/**/*.xml
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+logging:
+    level:
+      demo: debug
+
+
